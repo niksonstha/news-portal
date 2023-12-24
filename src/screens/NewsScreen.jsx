@@ -1,8 +1,9 @@
+import { Box, Heading } from "@chakra-ui/react";
 const NewsScreen = () => {
   return (
-    <div>
-      <h1>news</h1>
-    </div>
+    <Box width={"90%"} mr={"auto"} ml={"auto"}>
+      <Heading>Todays News</Heading>
+    </Box>
   );
 };
 
