@@ -7,7 +7,6 @@ const Services = () => {
       padding={4}
       rounded={4}
       mt={10}
-      mb={20}
       display={"flex"}
       alignItems={"center"}
       flexDirection={"column"}
