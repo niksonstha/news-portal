@@ -17,7 +17,7 @@ function App() {
         <Navbar />
       </Box>
 
-      <Box width={"80%"}>
+      <Box width={"80%"} overflowY={"auto"} height={"100vh"}>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/about" element={<AboutScreen />} />

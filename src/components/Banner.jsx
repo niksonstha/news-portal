@@ -5,9 +5,6 @@ const Banner = () => {
       height={"50vh"}
       bgColor={"#FAEED1"}
       padding={4}
-      width={"90%"}
-      mr={"auto"}
-      ml={"auto"}
       rounded={4}
       mt={10}
       display={"flex"}
