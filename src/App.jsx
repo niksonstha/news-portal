@@ -17,7 +17,7 @@ function App() {
         <Navbar />
       </Box>
 
-      <Box ml={6}>
+      <Box width={"80%"}>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/about" element={<AboutScreen />} />
