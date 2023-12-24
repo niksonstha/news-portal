@@ -4,6 +4,7 @@ import HomeScreen from "./screens/HomeScreen";
 import Navbar from "./components/Navbar";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
+import NewsScreen from "./screens/NewsScreen";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/about" element={<AboutScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
+          <Route path="/news" element={<NewsScreen />} />
         </Routes>
       </Box>
     </Box>

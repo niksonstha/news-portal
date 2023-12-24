@@ -46,7 +46,7 @@ const Navbar = () => {
             Contact
           </ListItem>
         </NavLink>
-        <NavLink to={"/services"}>
+        <NavLink to={"/news"}>
           <ListItem
             cursor={"pointer"}
             bgColor={"#FAEED1"}
@@ -55,7 +55,7 @@ const Navbar = () => {
             transition={"all 0.2s ease-in"}
             _hover={{ backgroundColor: "#BBAB8C" }}
           >
-            Services
+            News
           </ListItem>
         </NavLink>
       </UnorderedList>

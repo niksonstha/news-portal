@@ -1,8 +1,10 @@
+import { Box } from "@chakra-ui/react";
+import ContactForm from "../components/ContactForm";
 const ContactScreen = () => {
   return (
-    <div>
-      <h1>I am contact</h1>
-    </div>
+    <Box width={"90%"} mr={"auto"} ml={"auto"}>
+      <ContactForm />
+    </Box>
   );
 };
 
