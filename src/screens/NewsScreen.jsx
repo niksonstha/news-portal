@@ -1,10 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Box, Heading, SimpleGrid, Button, Spinner } from "@chakra-ui/react";
 import { getApiData } from "../api/api";
 import { useEffect, useState } from "react";
 import ArticlesCard from "../components/ArticlesCard";
+import { NavLink } from "react-router-dom";
+import { useArticle } from "../context/context";
 
 const NewsScreen = () => {
-  const [articles, setArticles] = useState([]);
+  const { articles, setArticles } = useArticle();
   const [currentPage, setCurrentPage] = useState(1);
   const [articlesPerPage] = useState(4); // Number of articles per page
   const [loading, setLoading] = useState(true); // Loading state
@@ -45,11 +48,14 @@ const NewsScreen = () => {
           <SimpleGrid columns={2} spacing={5} mt={10}>
             {currentArticles.map((article, index) => (
               <Box key={index} p="6" bg="#FAEED1" rounded="lg" shadow="md">
-                <ArticlesCard
-                  title={article.title}
-                  description={article.description}
-                  image={article.image}
-                />
+                {/* Link to the detail page of the article */}
+                <NavLink to={`/article/${article.title}`}>
+                  <ArticlesCard
+                    title={article.title}
+                    description={article.description}
+                    image={article.image}
+                  />
+                </NavLink>
               </Box>
             ))}
           </SimpleGrid>

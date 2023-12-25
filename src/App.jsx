@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
 import NewsScreen from "./screens/NewsScreen";
+import ArticleDetailsPage from "./components/ArticleDetailsPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<AboutScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/news" element={<NewsScreen />} />
+          <Route path="/article/:title" element={<ArticleDetailsPage />} />
         </Routes>
       </Box>
     </Box>
