@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Box, SimpleGrid, Heading, Text, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Image } from "@chakra-ui/react";
 const ArticlesCard = ({ title, description, image }) => {
   return (
     <Box mt={10}>
